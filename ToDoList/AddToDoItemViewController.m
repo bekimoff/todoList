@@ -41,6 +41,20 @@
         self.toDoItem.itemName = self.textField.text;
         self.toDoItem.completed = NO;
     }
+    
+    NSString *query = [NSString stringWithFormat:@"insert into todo values('%@', %d, null)", self.toDoItem.itemName, self.toDoItem.completed];
+
+    // Execute the query.
+    [self.dbManager executeQuery:query];
+    
+    // If the query was successfully executed then pop the view controller.
+    if (self.dbManager.affectedRows != 0) {
+        NSLog(@"Query was executed successfully. Affected rows = %d", self.dbManager.affectedRows);
+    }
+    else{
+        NSLog(@"Could not execute the query.");
+    }
+
 }
 
 

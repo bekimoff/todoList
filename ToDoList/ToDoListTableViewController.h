@@ -11,4 +11,8 @@
 @interface ToDoListTableViewController : UITableViewController
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 
+@property (weak, nonatomic) IBOutlet UITableView *tblTodo;
+
+- (IBAction)addNewRecord:(id)sender;
+
 @end
