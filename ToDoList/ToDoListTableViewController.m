@@ -133,7 +133,8 @@
     
     ToDoItem *toDoItem = [[ToDoItem alloc] init];
     toDoItem.itemName = [NSString stringWithFormat:@"%@", [[self.arrToDoItem objectAtIndex:indexPath.row] objectAtIndex:indexOfItemName]];
-    toDoItem.completed = [[self.arrToDoItem objectAtIndex:indexPath.row] objectAtIndex:indexOfComplete];
+    //toDoItem.completed = [[self.arrToDoItem objectAtIndex:indexPath.row] objectAtIndex:indexOfComplete];
+    toDoItem.completed = "NO";
     toDoItem.creationDate = [[self.arrToDoItem objectAtIndex:indexPath.row] objectAtIndex:indexOfdateCreated];
     
     cell.textLabel.text = toDoItem.itemName;
@@ -201,14 +202,18 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
     tappedItem.completed = !tappedItem.completed;
+    [tableView reloadRowsAtIndexPaths:@[indexPath]withRowAnimation:UITableViewRowAnimationNone];
     
     //Update in database
-    NSString *query = [NSString stringWithFormat:@"update todo set completed=%d where itemName=%@", tappedItem.completed, tappedItem.itemName];
+    NSString *query;
+    if(tappedItem.completed){
+        query = [NSString stringWithFormat:@"update todo set complete=%d where itemName=%@", 1, tappedItem.itemName];
+    }else{
+        query = [NSString stringWithFormat:@"update todo set complete=%d where itemName=%@", 0, tappedItem.itemName];
+    }
     
     // Execute the query.
     [self.dbManager executeQuery:query];
-    
-    [tableView reloadRowsAtIndexPaths:@[indexPath]withRowAnimation:UITableViewRowAnimationNone];
 }
 
 @end
