@@ -16,9 +16,12 @@
 		1860D7BB1A5E2DF200CE8481 /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860D7BA1A5E2DF200CE8481 /* AddToDoItemViewController.m */; };
 		1860D7BE1A5E2EFC00CE8481 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860D7BD1A5E2EFC00CE8481 /* ToDoListTableViewController.m */; };
 		1860D7C11A5E31F900CE8481 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860D7C01A5E31F900CE8481 /* ToDoItem.m */; };
+		1866F1631B2FE50E0061ADCD /* To-Do-List-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1866F1621B2FE50E0061ADCD /* To-Do-List-Icon.png */; };
 		1872B1051B269CD700557732 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1872B1041B269CD700557732 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		1872B10B1B269F5F00557732 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872B10A1B269F5F00557732 /* DBManager.m */; };
 		1872B10D1B26A69500557732 /* todo.db in Resources */ = {isa = PBXBuildFile; fileRef = 1872B10C1B26A69500557732 /* todo.db */; };
+		187ED0631B2FE10900B456A0 /* GTasks-To-Do-List-Task-List-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ED0621B2FE10900B456A0 /* GTasks-To-Do-List-Task-List-Icon.png */; };
+		187ED0651B2FE35800B456A0 /* To-Do-List-Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 187ED0641B2FE35800B456A0 /* To-Do-List-Icon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +52,13 @@
 		1860D7BD1A5E2EFC00CE8481 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
 		1860D7BF1A5E31F900CE8481 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		1860D7C01A5E31F900CE8481 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
+		1866F1621B2FE50E0061ADCD /* To-Do-List-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "To-Do-List-Icon.png"; path = "../To-Do-List-Icon.png"; sourceTree = "<group>"; };
 		1872B1041B269CD700557732 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1872B1091B269F5F00557732 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = ToDoList/DBManager.h; sourceTree = "<group>"; };
 		1872B10A1B269F5F00557732 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = ToDoList/DBManager.m; sourceTree = "<group>"; };
 		1872B10C1B26A69500557732 /* todo.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = todo.db; path = ../../todo.db; sourceTree = "<group>"; };
+		187ED0621B2FE10900B456A0 /* GTasks-To-Do-List-Task-List-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GTasks-To-Do-List-Task-List-Icon.png"; sourceTree = "<group>"; };
+		187ED0641B2FE35800B456A0 /* To-Do-List-Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "To-Do-List-Icon.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 		1860D7931A5A458D00CE8481 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1866F1621B2FE50E0061ADCD /* To-Do-List-Icon.png */,
+				187ED0641B2FE35800B456A0 /* To-Do-List-Icon.jpg */,
+				187ED0621B2FE10900B456A0 /* GTasks-To-Do-List-Task-List-Icon.png */,
 				1860D7941A5A458D00CE8481 /* Info.plist */,
 				1860D7951A5A458D00CE8481 /* main.m */,
 			);
@@ -223,8 +232,11 @@
 			files = (
 				1860D79F1A5A458D00CE8481 /* Main.storyboard in Resources */,
 				1872B10D1B26A69500557732 /* todo.db in Resources */,
+				187ED0651B2FE35800B456A0 /* To-Do-List-Icon.jpg in Resources */,
 				1860D7A41A5A458D00CE8481 /* LaunchScreen.xib in Resources */,
 				1860D7A11A5A458D00CE8481 /* Images.xcassets in Resources */,
+				187ED0631B2FE10900B456A0 /* GTasks-To-Do-List-Task-List-Icon.png in Resources */,
+				1866F1631B2FE50E0061ADCD /* To-Do-List-Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
